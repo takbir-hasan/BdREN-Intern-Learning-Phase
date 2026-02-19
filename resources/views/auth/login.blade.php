@@ -1,6 +1,13 @@
-<title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ __('Login') }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-    <div class="space-y-8">
+   <body>
+     <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800">
+        <div class="space-y-8">
         <div class="text-center">
             <h1 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
                 {{ __('Sign in to your account') }}
@@ -15,7 +22,7 @@
                 @csrf
 
                 <div>
-                    <label for="email" class="block text-sm font-medium text-black">{{ __('Email address') }}</label>
+                    <label for="email" class="block text-sm font-medium text-white">{{ __('Email address') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="email"
@@ -33,7 +40,7 @@
                 </div>
 
                 <div>
-                    <label for="password" class="block text-sm font-medium text-black">{{ __('Password') }}</label>
+                    <label for="password" class="block text-sm font-medium text-white">{{ __('Password') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="password"
@@ -42,7 +49,7 @@
                             required
                             autocomplete="current-password"
                             placeholder="••••••••"
-                            class="block w-full rounded-xl border-0 bg-black px-4 py-3 text-black placeholder:text-black shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
+                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-black placeholder:text-black shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
                         />
                     </div>
                     <x-input-error :messages="$errors->get('password')" class="mt-1.5" />
@@ -57,7 +64,7 @@
             </form>
 
             <div class="mt-8 pt-6 border-t border-white/10">
-                <p class="text-center text-sm text-black">
+                <p class="text-center text-sm text-white">
                     {{ __('Don\'t have an account?') }}
                     <a href="{{ route('register') }}" class="font-semibold text-indigo-300 hover:text-white transition">
                         {{ __('Create one') }}
@@ -66,4 +73,6 @@
             </div>
         </div>
     </div>
+     </div>
 
+   </body>

@@ -1,13 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ __('Register') }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-<title>{{ config('app.name', 'Laravel') }}</title>
 
-
-    <div class="space-y-8">
+   <body>
+    <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800">
+         <div class="space-y-8">
         <div class="text-center">
-            <h1 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            <h1 class="text-2xl mt-4 font-bold tracking-tight text-white sm:text-3xl">
                 {{ __('Create your account') }}
             </h1>
-            <p class="mt-2 text-sm text-white/70">
+            <p class="mt-2 text-sm text-white">
                 {{ __('Get started with a free account in seconds.') }}
             </p>
         </div>
@@ -15,9 +21,9 @@
         <div>
             <form method="POST" action="{{ route('register') }}" class="space-y-5">
                 @csrf
-
+                
                 <div>
-                    <label for="name" class="block text-sm font-medium text-white/90">{{ __('Full name') }}</label>
+                    <label for="name" class="block text-sm font-medium text-white">{{ __('Full name') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="name"
@@ -35,7 +41,7 @@
                 </div>
 
                 <div>
-                    <label for="email" class="block text-sm font-medium text-white/90">{{ __('Email address') }}</label>
+                    <label for="email" class="block text-sm font-medium text-white">{{ __('Email address') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="email"
@@ -52,7 +58,7 @@
                 </div>
 
                 <div>
-                    <label for="password" class="block text-sm font-medium text-white/90">{{ __('Password') }}</label>
+                    <label for="password" class="block text-sm font-medium text-white">{{ __('Password') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="password"
@@ -69,7 +75,7 @@
                 </div>
 
                 <div>
-                    <label for="password_confirmation" class="block text-sm font-medium text-white/90">{{ __('Confirm password') }}</label>
+                    <label for="password_confirmation" class="block text-sm font-medium text-white">{{ __('Confirm password') }}</label>
                     <div class="mt-1.5">
                         <input
                             id="password_confirmation"
@@ -92,8 +98,8 @@
                 </button>
             </form>
 
-            <div class="mt-8 pt-6 border-t border-white/10">
-                <p class="text-center text-sm text-white/70">
+            <div class="m-8 p-6 border-t border-white/10">
+                <p class="text-center text-sm text-white">
                     {{ __('Already have an account?') }}
                     <a href="{{ route('login') }}" class="font-semibold text-indigo-300 hover:text-white transition">
                         {{ __('Sign in') }}
@@ -103,3 +109,6 @@
         </div>
     </div>
 
+
+    </div>
+   </body>
