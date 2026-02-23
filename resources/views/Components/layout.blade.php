@@ -32,7 +32,7 @@
             <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
             <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
             <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-            <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>       
+            <x-nav-link href="/contacts" :active="request()->is('contacts')">Contact List</x-nav-link>       
             </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
   </div>
 </nav>
 
-<header class="bg-gray-100 py-8">
+<header class="bg-gray-100 py-4">
   <div class="max-w-7xl mx-auto px-4 text-center">
     
     <h1 class="text-3xl md:text-4xl font-bold text-gray-800">

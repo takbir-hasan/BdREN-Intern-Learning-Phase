@@ -2,7 +2,7 @@
         <x-slot:heading>
             About Page
         </x-slot:heading>
-
-        <h1>About Us</h1>
-        <p>This is the about page.</p>
+        
+        {{-- <h1>Home Page</h1>
+        <p>Welcome to the about page.</p> --}}
 </x-layout>

@@ -34,7 +34,7 @@
                             autofocus
                             autocomplete="name"
                             placeholder="John Doe"
-                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
+                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-black placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
                         />
                     </div>
                     <x-input-error :messages="$errors->get('name')" class="mt-1.5" />
@@ -51,7 +51,7 @@
                             required
                             autocomplete="username"
                             placeholder="you@example.com"
-                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
+                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-black placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
                         />
                     </div>
                     <x-input-error :messages="$errors->get('email')" class="mt-1.5" />
@@ -67,10 +67,10 @@
                             required
                             autocomplete="new-password"
                             placeholder="••••••••"
-                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
+                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-black placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
                         />
                     </div>
-                    <p class="mt-1 text-xs text-white/50">{{ __('Use at least 8 characters.') }}</p>
+                    <p class="mt-1 text-xs text-white">{{ __('Use at least 8 characters.') }}</p>
                     <x-input-error :messages="$errors->get('password')" class="mt-1.5" />
                 </div>
 
@@ -84,7 +84,7 @@
                             required
                             autocomplete="new-password"
                             placeholder="••••••••"
-                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
+                            class="block w-full rounded-xl border-0 bg-white/10 px-4 py-3 text-black placeholder:text-white/40 shadow-sm ring-1 ring-inset ring-white/20 transition focus:bg-white/15 focus:ring-2 focus:ring-indigo-400 sm:text-sm"
                         />
                     </div>
                     <x-input-error :messages="$errors->get('password_confirmation')" class="mt-1.5" />

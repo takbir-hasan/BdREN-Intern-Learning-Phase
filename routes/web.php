@@ -11,13 +11,15 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact-list', function () {
+    return view('contact-list');
+})->name('contact-list');
 
 // Dashboard - requires authentication and email verification
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 require __DIR__.'/auth.php';

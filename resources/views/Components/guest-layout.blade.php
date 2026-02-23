@@ -15,10 +15,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-black antialiased bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen">
-        <div class="relative z-10">
-            @include('layouts.navigation')
-        </div>
-
+    
         <!-- Animated Background -->
         <div class="fixed inset-0 overflow-hidden -z-10">
             <div class="absolute -inset-10 opacity-50">
